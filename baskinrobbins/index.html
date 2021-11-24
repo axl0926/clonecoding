@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배스킨라빈스</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slideBanner.css" />
+    <script defer src="js/slideBanner.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <!--상단 헤더-->
+    <header>
+        <div class="wrap">
+            <ul id="top-btn-left">
+                <li><a href="" style="background-image: url(./img/icon_facebook.png);">fb</a></li>
+                <li><a href="" style="background-image: url(./img/icon_twitter.png);">twitter</a></li>
+                <li><a href="" style="background-image: url(./img/icon_blog.png);">blog</a></li>
+                <li><a href="" style="background-image: url(./img/icon_instgram.png);">instagram</a></li>
+                <li><a href="" style="background-image: url(./img/icon_youtube.png);">youtube</a></li>
+            </ul>
+            <a href="#" id="top_logo">Baskin robbins</a>
+
+            <ul id="top-btn-right">
+                <li><a href="">고객센터</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><button id="search">search</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--메인 메뉴-->
+    <nav class="clearfix">
+        <div class="wrap">
+            <ul id="nav-user">
+                <li><a href="" id="user-login" class="nav-menu-btn">LOGIN</a></li>
+                <li><a href="" id="user-join" class="nav-menu-btn">JOIN</a></li>
+            </ul>
+            <ul id="nav-menu">
+                <li><a href="" id="menu-btn1" class="nav-menu-btn">FLAVOR OF THE MONTH</a></li>
+                <li><a href="" id="menu-btn2" class="nav-menu-btn">MENU</a></li>
+                <li><a href="" id="menu-btn3" class="nav-menu-btn">영양 성분 및 알레르기</a></li>
+                <li><a href="" id="menu-btn4" class="nav-menu-btn">EVENT</a></li>
+                <li><a href="" id="menu-btn5" class="nav-menu-btn">STORE</a></li>
+                <li><a href="" id="menu-btn6" class="nav-menu-btn">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--검색 아이콘 클릭시 나타나는 검색 그룹-->
+    <div class="search-group">
+        <form>
+            <div class="search-container">
+                <div class="search-item-label">제품명</div>
+                <div class="search-item-select">
+                    <select name="item-class" id="item-class">
+                        <option value="">전체</option>
+                        <option value="01">아이스크림</option>
+                        <option value="01">아이스크림케이크</option>
+                        <option value="01">음료</option>
+                        <option value="01">커피</option>
+                        <option value="01">디저트</option>
+                        <option value="01">block pack</option>
+                        <option value="01">ready pack</option>
+                    </select></div>
+                <div class="search-item-input"><input type="text" name="user_id" id="user_id"></div>
+
+
+                <div class="search-hashtag-label">해시태그</div>
+                <div class="search-hashtag">
+                    <input type="text" name="user_id" id="user_id">
+                </div>
+                <div class="search-hashtag-fav">·&nbsp;&nbsp;&nbsp;&nbsp;자주 찾는 해시태그
+                    <button>#치즈나무숲</button>
+                    <button>#치즈나무숲블라스트</button>
+                    <button>#치즈나무숲아이스쿠키샌드</button>
+                </div>
+                <div class="search-ingrd-label">알레르기 성분</div>
+                <div class="search-ingrd-1 search-checkbox">
+                    <label for="check1"></label><input type="checkbox" name="ingrd" value="계란"
+                        id="check1"><label>계란</label>
+                    <label for="check2"></label><input type="checkbox" name="ingrd" value="대두"
+                        id="check2"><label>대두</label>
+                    <label for="check3"></label><input type="checkbox" name="ingrd" value="돼지고기"
+                        id="check3"><label>돼지고기</label>
+                    <label for="check4"></label><input type="checkbox" name="ingrd" value="땅콩"
+                        id="check4"><label>땅콩</label>
+                </div>
+                <div class="search-ingrd-2 search-checkbox">
+                    <label for="check5"></label><input type="checkbox" name="ingrd" value="밀"
+                        id="check5"><label>밀</label>
+                    <label for="check6"></label><input type="checkbox" name="ingrd" value="복숭아"
+                        id="check6"><label>복숭아</label>
+                    <label for="check7"></label><input type="checkbox" name="ingrd" value="우유"
+                        id="check7"><label>우유</label>
+                    <label for="check8"></label><input type="checkbox" name="ingrd" value="없음"
+                        id="check8"><label>없음</label>
+                </div>
+
+            </div>
+        </form>
+        <button>검색</button>
+    </div>
+    <div class="search-shadow-bg"></div>
+
+
+    <!--본문 영역-->
+    <section>
+        <!--최상단 배너-->
+        <article id="top_banner">
+            <a href="">top_banner</a>
+        </article>
+
+        <!--슬라이드 배너-->
+        <article id="main_banner">
+
+            <div class="sl-banner">
+                <div class="sl-inner0 sl-active" style="background-image:url('img/sl-1.png');background-color:#7DC9E2;">
+                    1</div>
+                <div class="sl-inner1 " style="background-image:url('img/sl-2.png');background-color: #CA2B6E;">2</div>
+                <div class="sl-inner2" style="background-image:url('img/sl-3.png');background-color:#ffe103;">3</div>
+                <div class="sl-inner3" style="background-image:url('img/sl-4.png');background-color:#D6A67B;">4</div>
+                <div class="sl-inner4" style="background-image:url('img/sl-5.png');background-color:#fb637e;">5</div>
+            </div>
+            <button id="prev" onclick="moveSlide(1,false)">prev</button>
+            <button id="next" onclick="moveSlide(1,true)">next</button>
+            <ul id="banner_slide_toggle">
+                <li class="sl-nav-active"><a href="#none"></a></li>
+                <li><a href="#none"></a></li>
+                <li><a href="#none"></a></li>
+                <li><a href="#none"></a></li>
+                <li><a href="#none"></a></li>
+            </ul>
+        </article>
+
+        <!--이벤트 배너-->
+        <article id="event_banner">
+            <img src="./img/h_event.png" alt="">
+            <ul id="event_list">
+                <li><a href=""><img src="./img/banner_delivery.png" alt="">
+                        <img src="./img/stit_store.gif" alt="">
+                        <p class="event_title">해피오더 딜리버리로 간편하게 주문하세요!</p>
+                        <p class="event_caption">상시진행</p>
+                    </a> </li>
+                <!--
+                -->
+                <li><a href=""><img src="./img/banner_delivery_bm.png" alt="">
+                        <img src="./img/stit_store.gif" alt="">
+                        <p class="event_title">배달의 민족에서 빠르게 주문하세요!</p>
+                        <p class="event_caption">상시진행</p>
+                    </a></li>
+                <!--
+                -->
+                <li><a href=""><img src="./img/banner_delivery_kakao.png" alt="">
+                        <img src="./img/stit_store.gif" alt="">
+                        <p class="event_title">요기요에서 손쉽게 주문하세요!</p>
+                        <p class="event_caption">상시진행</p>
+                    </a></li>
+                <!--
+                -->
+                <li><a href=""><img src="./img/banner_delivery_ygy.png" alt="">
+                        <img src="./img/stit_store.gif" alt="">
+                        <p class="event_title">카카오톡 주문하기에서 편리하게 주문하세요!</p>
+                        <p class="event_caption">상시진행</p>
+                    </a></li>
+                <!--
+            -->
+            </ul>
+            <ul id="event_slide_toggle">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </article>
+        <!--제품메뉴 배너-->
+        <article id="menu_banner">
+            <div id="menu_list">
+                <div class="wrap">
+                    <img src="./img/h_menu.png" alt="">
+                    <img src="./img/img_menu_list_210928.png" id="menu_list_img" alt="">
+                    <a href="#" id="list_icecream"></a>
+                    <a href="#" id="list_icecreamcake"></a>
+                    <a href="#" id="list_beverage"></a>
+                    <a href="#" id="list_coffee"></a>
+                    <a href="#" id="list_gift"></a>
+                    <a href="#" id="list_dessert"></a>
+                </div>
+            </div>
+        </article>
+        <!--스토어&주문 배너-->
+        <article id="store_order" class="clearfix">
+            <div id="store_banner">
+                <img src="./img/h_store.png" alt="">
+                <a href=""><img src="./img/img_store.jpg" alt=""></a>
+
+            </div>
+            <div id="order_banner">
+                <img src="./img/h_happyorder_delivery.png" alt="">
+                <a href=""></a><img src="./img/img_happyorder_delivery.png" alt=""></a>
+
+            </div>
+        </article>
+        <!--SNS 바로가기-->
+        <article id="sns">
+            <img src="./img/h_sns.png" alt="">
+            <ul>
+                <li><a href="" style="background-image: url(./img/sns_facebook.png);"></a></li>
+                <!--
+            -->
+                <li><a href="" style="background-image: url(./img/sns_twitter.png);"></a></li>
+                <!--
+            -->
+                <li><a href="" style="background-image: url(./img/sns_blog.png);"></a></li>
+                <!--
+            -->
+                <li><a href="" style="background-image: url(./img/sns_instagram.png);"></a></li>
+                <!--
+            -->
+                <li><a href="" style="background-image: url(./img/sns_youtube.png);"></a></li>
+            </ul>
+        </article>
+        <!--베라 인스타 리스트-->
+        <article id="inst_list">
+            <hr> <a href=""><img src="./img/tit_sns.png" alt=""></a>
+            <ul>
+                <li><a href="" style="background-image: url(./img/inst_list_01.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_02.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_03.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_04.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_05.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_06.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_07.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_08.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_09.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_10.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_11.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_12.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_13.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_14.jpg);"></a></li>
+                <!--
+                -->
+                <li><a href="" style="background-image: url(./img/inst_list_15.jpg);"></a></li>
+            </ul>
+            <button>더보기</button>
+        </article>
+
+    </section>
+    <footer>
+        <div id="footer1">
+            <ul>
+                <li><a href=""><b>점포개설문의</b></a></li>
+                <!--
+                -->
+                <li><a href=""><b>채용문의</b></a></li>
+                <!--
+                -->
+                <li><a href=""><b>윤리신고센터</b></a></li>
+                <!--
+                -->
+                <li><a href=""><b>이용약관</b></a></li>
+                <!--
+                -->
+                <li style="width:15%;"><a href="" style="color:#ff7c98"><b>개인정보처리방침</b></a></li>
+                <!--
+                -->
+                <li style="width:20%"><a href=""><b>영상정보처리기기운영관리방침</b></a></li>
+                <!--
+                -->
+                <li style="width:17%"><a href=""><b>거래희망회사 사전등록</b></a></li>
+            </ul>
+        </div>
+        <div id="footer2">
+            <ul>
+                <li><a href=""><img src="./img/btn_happypoint.png" alt=""></a></li>
+                <!--
+                -->
+                <li><a href=""><img src="./img/btn_happymarket.png" alt=""></a></li>
+                <!--
+                -->
+                <li style="width:25%;"><a href=""><img src="./img/btn_spc_story.png" alt=""></a></li>
+                <!--
+                -->
+                <li style="width:5%;"><a href=""><img src="./img/btn_norton.gif" alt=""></a></li>
+                <!--
+                -->
+                <li style="width:5%;"><a href=""><img src="./img/btn_ccm.gif" alt=""></a></li>
+                <!--
+                -->
+                <li style="width:5%;"><a href=""><img src="./img/btn_ksa.png" alt=""></a></li>
+                <!--
+                -->
+                <li style="width:15%;"><a href=""><button>FAMILY SITE</button></a></li>
+            </ul>
+        </div>
+        <img src="./img/footer_logo.png" alt="">
+        <address>사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)
+            <br>TEL : 080-555-3131 개인정보관리책임자 : 김경우</address>
+        <p>Copyright &copy; 2016 BRKOREA Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

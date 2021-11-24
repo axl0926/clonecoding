@@ -1,0 +1,28 @@
+.container {
+    width: 100vw;
+    height: 679px;
+    overflow: hidden;
+}
+
+.sl-banner {
+    width: 100vw;
+    height: 679px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sl-banner>div {
+    float: left;
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    height: 679px;
+    transform: translate(-100vw);
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+.sl-banner>.sl-active {
+    left: 0px;
+    transform: translate(0);
+}
