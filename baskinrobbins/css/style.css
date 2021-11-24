@@ -42,6 +42,9 @@ html {
     width: 1200px;
     margin: auto;
 }
+.no-hover{
+    pointer-events: none;
+}
 
 .no-hover {
     pointer-events: none;
@@ -363,12 +366,10 @@ nav .nav-menu-btn {
     display: block;
     text-indent: -9999px;
 }
-
 nav #user-login {
     width: 37px;
     background-position: 0 -1px;
 }
-
 nav #user-join {
     width: 36px;
     background-position: -97px -1px;
@@ -397,12 +398,10 @@ nav #nav-menu li:nth-child(5) {
 nav #nav-menu li:nth-child(6) {
     grid-column: 7;
 }
-
 nav #menu-btn1 {
     width: 165px;
     background-position: -133px -3px;
 }
-
 nav #menu-btn2 {
     width: 42px;
     background-position: -415px -3px;
@@ -426,6 +425,53 @@ nav #menu-btn5 {
 nav #menu-btn6 {
     width: 49px;
     background-position: -1057px -3px;
+}
+.nav-hover{
+    width: 100%;
+    height:0px;
+    background-color: white;
+    position: absolute;
+    top:46px;
+    transition: all 0.5s;
+    overflow: hidden;
+    border-bottom:solid 1px #301d17;
+}
+nav:hover .nav-hover{
+    height:275px;
+}
+
+nav:hover .nav-hover-wrap{
+    opacity: 1;
+}
+.nav-hover .nav-hover-wrap{
+    width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 200px 240px 170px 150px 170px 148px 195px;
+    text-align: center;
+    font-size:14px;
+    color:#948780;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.nav-hover .nav-hover-wrap ul{
+    margin-top:30px;
+}
+.nav-hover .nav-hover-wrap li{
+    height:40px;
+    line-height: 40px;
+}
+.nav-hover .nav-hover-wrap a:hover{
+    color:#ff7c98;
+}
+
+.nav-hover-happypoint{
+    width:200px;
+    height:200px;
+    background-image: url(../img/img_happypoint_app.jpg);
+    background-repeat: no-repeat;
+    align-self: center;
+    background-position: center;
 }
 
 .nav-hover {
@@ -655,6 +701,10 @@ nav:hover .nav-hover-wrap {
     letter-spacing: -2px;
     height: 30px;
     line-height: 30px;
+}
+#event_banner .event-img{
+    border-radius: 3px;
+    overflow:hidden;
 }
 
 #event_banner .event-img {
