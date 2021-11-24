@@ -13,6 +13,7 @@
     font-family: 'NanumBarunGothic', sans-serif;
     box-sizing: border-box;
     letter-spacing: -1px;
+    outline: 0;
 }
 
 a {
@@ -38,6 +39,9 @@ html {
 
     width: 1200px;
     margin: auto;
+}
+.no-hover{
+    pointer-events: none;
 }
 
 /*-------------------상단 헤더-------------------*/
@@ -124,6 +128,7 @@ header ul#top-btn-right li button#search {
     width: 54px;
     height: 54px;
     background: url(../img/icon_search.png) no-repeat;
+    cursor: pointer;
 }
 /*-------------------검색 바 --------------------*/
 .search-group{
@@ -132,7 +137,7 @@ header ul#top-btn-right li button#search {
     margin-top:25px;
     position:absolute;
     top:100px;
-    z-index: 5;
+    z-index: 7;
     opacity: 0;
     background-color: white;
     padding-top:25px;
@@ -142,7 +147,7 @@ header ul#top-btn-right li button#search {
 
 .search-group.search-active{
     top:158px;
-    z-index: 5;
+    z-index: 9;
     opacity:1;
 }
 .search-active{
@@ -150,7 +155,7 @@ header ul#top-btn-right li button#search {
 }
 .search-shadow-bg.search-active{
     opacity: 0.5;
-    z-index:4;
+    z-index:6;
 }
 
 .search-shadow-bg{
@@ -159,9 +164,9 @@ header ul#top-btn-right li button#search {
     background-color: black;
     z-index: -1;
     width:100%;
-    height:400vh;
     position:absolute;
-    top:180px;
+    top:0px;
+    margin-top:185px;
 
 }
 .search-container{
@@ -190,6 +195,7 @@ header ul#top-btn-right li button#search {
     background-color: #efefef;
     height:33px;
     width: 100%;
+    padding-left: 10px;
 }
 .search-container .search-item-label{
     grid-column: 1;
@@ -212,6 +218,10 @@ header ul#top-btn-right li button#search {
     grid-column: 6;
     grid-row:1;
 }
+.search-container #hashtag{
+    padding-left: 10px;
+    color:#ff7c98;
+}
 .search-container .search-hashtag-fav{
 
     grid-column: 6;
@@ -222,6 +232,7 @@ header ul#top-btn-right li button#search {
     font-size: 13px;
 }
 .search-container .search-hashtag-fav button{
+    cursor: pointer;
     border:none;
     background-color:white;
     letter-spacing: -2px;
@@ -282,19 +293,19 @@ header ul#top-btn-right li button#search {
     margin-top:23px;
     font-size:15px;
     line-height: 37px;
+    cursor: pointer;
 }
 /*-------------------메인 메뉴-------------------*/
 nav {
     border-top: solid 1px rgb(202, 202, 202);
     border-bottom:solid 1px #693337;
     height: 48px;
-    z-index: 6;
+    z-index: 10;
     position: relative;
     background-color: white;
 }
 
-nav li,
-nav ul {
+nav .wrap ul , nav .wrap li{
     display: inline-block;
     height: 48px;
     line-height: 48px;
@@ -315,23 +326,16 @@ nav #nav-user li:first-child {
     margin-right: 40px;
 }
 
-nav #nav-menu li {
-}
-
-nav #nav-menu li:first-child {
-}
 
 nav .nav-menu-btn {
     background: url(../img/gnb_menu.png) no-repeat;
     display: block;
     text-indent: -9999px;
 }
-
 nav #user-login {
     width: 37px;
     background-position: 0 -1px;
 }
-
 nav #user-join {
     width: 36px;
     background-position: -97px -1px;
@@ -342,29 +346,22 @@ nav #nav-menu li:nth-child(1){
 nav #nav-menu li:nth-child(2){
     grid-column: 3;
 }
-
 nav #nav-menu li:nth-child(3){
     grid-column: 4;
 }
-
 nav #nav-menu li:nth-child(4){
     grid-column: 5;
 }
-
 nav #nav-menu li:nth-child(5){
     grid-column: 6;
 }
 nav #nav-menu li:nth-child(6){
     grid-column: 7;
 }
-
-
-
 nav #menu-btn1 {
     width: 165px;
     background-position: -133px -3px;
 }
-
 nav #menu-btn2 {
     width: 42px;
     background-position: -415px -3px;
@@ -388,6 +385,53 @@ nav #menu-btn5 {
 nav #menu-btn6 {
     width: 49px;
     background-position: -1057px -3px;
+}
+.nav-hover{
+    width: 100%;
+    height:0px;
+    background-color: white;
+    position: absolute;
+    top:46px;
+    transition: all 0.5s;
+    overflow: hidden;
+    border-bottom:solid 1px #301d17;
+}
+nav:hover .nav-hover{
+    height:275px;
+}
+
+nav:hover .nav-hover-wrap{
+    opacity: 1;
+}
+.nav-hover .nav-hover-wrap{
+    width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 200px 240px 170px 150px 170px 148px 195px;
+    text-align: center;
+    font-size:14px;
+    color:#948780;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.nav-hover .nav-hover-wrap ul{
+    margin-top:30px;
+}
+.nav-hover .nav-hover-wrap li{
+    height:40px;
+    line-height: 40px;
+}
+.nav-hover .nav-hover-wrap a:hover{
+    color:#ff7c98;
+}
+
+.nav-hover-happypoint{
+    width:200px;
+    height:200px;
+    background-image: url(../img/img_happypoint_app.jpg);
+    background-repeat: no-repeat;
+    align-self: center;
+    background-position: center;
 }
 
 /*-------------------상단 배너-------------------*/
@@ -500,43 +544,52 @@ nav #menu-btn6 {
     margin: 60px auto;
 }
 
-#event_banner ul#event_list a {
+#event_banner ul a {
     display: block;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
-
-#event_banner ul#event_list li {
-    display: inline-block;
-    width: 25%;
+#event_banner .event-wrap{
+    overflow:hidden;
+    width:1200px;
+    height:100%;
+    display:flex;
+}
+#event_banner .event-wrap ul{
+    display:grid;
+    width:1200px;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content:space-between;
+    
+}
+#event_banner ul li {
     overflow: hidden;
     height: 420px;
+    width:289px;
+    margin:auto;
+}
+#event_banner .desc-wrap{
     text-align: left;
 }
-
-#event_banner ul#event_list li:first-child {
-    display: inline-block;
+#event_banner .desc-wrap img{
+    margin-top:22px;
 }
-
-#event_banner ul#event_list li img:first-child {
-    display: block;
-    margin: 20px auto;
-    border-radius: 2px;
-
+#event_banner .desc-wrap p{
+    margin-top:8px;
 }
-
-#event_banner ul#event_list li img:nth-child(2) {
-    margin: 5px;
-}
-
-#event_banner ul#event_list p.event_title {
+#event_banner ul p.event_title {
     font-size: 17px;
     letter-spacing: -2px;
     height: 30px;
     line-height: 30px;
 }
+#event_banner .event-img{
+    border-radius: 3px;
+    overflow:hidden;
+}
 
-#event_banner ul#event_list p.event_caption {
+#event_banner ul p.event_caption {
     color: #948780;
     font-size: 12px;
     letter-spacing: -2px;

@@ -41,7 +41,6 @@
                 <li><a href="" id="user-login" class="nav-menu-btn">LOGIN</a></li>
                 <li><a href="" id="user-join" class="nav-menu-btn">JOIN</a></li>
             </ul>
-            
             <ul id="nav-menu">
                 <li><a href="" id="menu-btn1" class="nav-menu-btn">FLAVOR OF THE MONTH</a></li>
                 <li><a href="" id="menu-btn2" class="nav-menu-btn">MENU</a></li>
@@ -50,6 +49,52 @@
                 <li><a href="" id="menu-btn5" class="nav-menu-btn">STORE</a></li>
                 <li><a href="" id="menu-btn6" class="nav-menu-btn">ABOUT</a></li>
             </ul>
+        </div>
+        <div class="nav-hover">
+            <div class="nav-hover-wrap">
+                <div class="nav-hover-happypoint"></div>
+                <div class="nav-hover-flavor"><a href=""><img src="./img/img_monthly_fom_211101.png" alt=""></a></div>
+                <div class="nav-hover-menu">
+                    <ul>
+                        <li><a href="">아이스크림</a></li>
+                        <li><a href="">아이스크림케이크</a></li>
+                        <li><a href="">음료</a></li>
+                        <li><a href="">커피</a></li>
+                        <li><a href="">디저트</a></li>
+                    </ul>
+                </div>
+                <div class="nav-hover-ingrd">
+                    <ul>
+                        <li><a href="">아이스크림</a></li>
+                        <li><a href="">음료</a></li>
+                        <li><a href="">커피</a></li>
+                    </ul>
+                </div>
+                <div class="nav-hover-event">
+                    <ul>
+                        <li><a href="">진행중이벤트</a></li>
+                        <li><a href="">당첨자발표</a></li>
+                    </ul>
+                </div>
+                <div class="nav-hover-store">
+                    <ul>
+                        <li><a href="">매장찾기</a></li>
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">단체주문</a></li>
+                    </ul>
+                </div>
+                <div class="nav-hover-about">
+                    <ul>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">보도자료</a></li>
+                        <li><a href="">채용정보</a></li>
+                        <li><a href="">점포개설문의</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
         </div>
     </nav>
 
@@ -69,12 +114,12 @@
                         <option value="01">block pack</option>
                         <option value="01">ready pack</option>
                     </select></div>
-                <div class="search-item-input"><input type="text" name="user_id" id="user_id"></div>
+                <div class="search-item-input"><input type="text" name="item-name" id="item-name"></div>
 
 
                 <div class="search-hashtag-label">해시태그</div>
                 <div class="search-hashtag">
-                    <input type="text" name="user_id" id="user_id">
+                    <input type="text" name="hashtag" id="hashtag">
                 </div>
                 <div class="search-hashtag-fav">·&nbsp;&nbsp;&nbsp;&nbsp;자주 찾는 해시태그
                     <button>#치즈나무숲</button>
@@ -139,39 +184,71 @@
             </ul>
         </article>
 
-        <!--이벤트 배너-->
-        <article id="event_banner">
+        <!--이벤트 슬라이드 배너-->
+        <article id="event_banner" class="clearfix">
             <img src="./img/h_event.png" alt="">
-            <ul id="event_list">
-                <li><a href=""><img src="./img/banner_delivery.png" alt="">
-                        <img src="./img/stit_store.gif" alt="">
-                        <p class="event_title">해피오더 딜리버리로 간편하게 주문하세요!</p>
-                        <p class="event_caption">상시진행</p>
-                    </a> </li>
-                <!--
-                -->
-                <li><a href=""><img src="./img/banner_delivery_bm.png" alt="">
-                        <img src="./img/stit_store.gif" alt="">
-                        <p class="event_title">배달의 민족에서 빠르게 주문하세요!</p>
-                        <p class="event_caption">상시진행</p>
-                    </a></li>
-                <!--
-                -->
-                <li><a href=""><img src="./img/banner_delivery_kakao.png" alt="">
-                        <img src="./img/stit_store.gif" alt="">
-                        <p class="event_title">요기요에서 손쉽게 주문하세요!</p>
-                        <p class="event_caption">상시진행</p>
-                    </a></li>
-                <!--
-                -->
-                <li><a href=""><img src="./img/banner_delivery_ygy.png" alt="">
-                        <img src="./img/stit_store.gif" alt="">
-                        <p class="event_title">카카오톡 주문하기에서 편리하게 주문하세요!</p>
-                        <p class="event_caption">상시진행</p>
-                    </a></li>
-                <!--
-            -->
-            </ul>
+            <div class="event-wrap ">
+                <ul class="event_list1 ">
+                    <li><a href=""><img src="./img/banner_delivery.png" alt="" class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="">
+                                <p class="event_title">해피오더 딜리버리로 간편하게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a> </li>
+                    <li><a href=""><img src="./img/banner_delivery_bm.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">배달의 민족에서 빠르게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a></li>
+                    <li><a href=""><img src="./img/banner_delivery_kakao.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">요기요에서 손쉽게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a></li>
+                    <li><a href=""><img src="./img/banner_delivery_ygy.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">카카오톡 주문하기에서 편리하게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="event_list2">
+                    <li><a href=""><img src="./img/ev-5.jpg" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">해피오더 딜리버리로 간편하게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a> </li>
+                    <li><a href=""><img src="./img/ev-6.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">배달의 민족에서 빠르게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a></li>
+                    <li><a href=""><img src="./img/ev-7.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">요기요에서 손쉽게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a></li>
+                    <li><a href=""><img src="./img/ev-8.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">카카오톡 주문하기에서 편리하게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="event_list3">
+                    <li><a href=""><img src="./img/ev-9.png" alt=""class="event-img">
+                            <div class="desc-wrap"> <img src="./img/stit_store.gif" alt="" >
+                                <p class="event_title">해피오더 딜리버리로 간편하게 주문하세요!</p>
+                                <p class="event_caption">상시진행</p>
+                            </div>
+                        </a> </li>
+                </ul>
+            </div>
             <ul id="event_slide_toggle">
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
