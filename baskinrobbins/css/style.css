@@ -12,6 +12,7 @@
 * {
     font-family: 'NanumBarunGothic', sans-serif;
     box-sizing: border-box;
+    letter-spacing: -1px;
 }
 
 a {
@@ -42,7 +43,7 @@ html {
 /*-------------------상단 헤더-------------------*/
 header {
     width: 100%;
-    height: 140px;
+    height: 138px;
     position: relative;
     border-top: 3px solid #ff7c98;
     background: url(../img/bg_header.gif) repeat-x;
@@ -139,6 +140,11 @@ header ul#top-btn-right li button#search {
     transition:all 0s;
 }
 
+.search-group.search-active{
+    top:158px;
+    z-index: 5;
+    opacity:1;
+}
 .search-active{
     transition:all 0.5s;
 }
@@ -157,11 +163,6 @@ header ul#top-btn-right li button#search {
     position:absolute;
     top:180px;
 
-}
-.search-group.search-active{
-    top:160px;
-    z-index: 5;
-    opacity:1;
 }
 .search-container{
     display:grid;
@@ -243,7 +244,6 @@ header ul#top-btn-right li button#search {
 }
 .search-container .search-checkbox {
     display: grid;
-    
     align-items: center;
     grid-template-columns: 20px 50px 20px 50px 20px 50px 20px 50px ;
     grid-template-rows:25px;
@@ -253,8 +253,8 @@ header ul#top-btn-right li button#search {
     display:inline-block;
     width:17px;
     height:17px;
-    border:solid 1px #b9b9b9;
-    border-radius: 2px;
+    border:solid 1px #d8d1cc;
+    border-radius: 3px;
     line-height:25px;
 }
 .search-container .search-checkbox input+label{
@@ -286,8 +286,8 @@ header ul#top-btn-right li button#search {
 /*-------------------메인 메뉴-------------------*/
 nav {
     border-top: solid 1px rgb(202, 202, 202);
-    border-bottom: solid 1px rgb(202, 202, 202);
-    height: 46px;
+    border-bottom:solid 1px #693337;
+    height: 48px;
     z-index: 6;
     position: relative;
     background-color: white;
@@ -296,8 +296,9 @@ nav {
 nav li,
 nav ul {
     display: inline-block;
-    height: 46px;
-    line-height: 46px;
+    height: 48px;
+    line-height: 48px;
+    
 }
 
 nav #nav-user {
@@ -305,7 +306,8 @@ nav #nav-user {
 }
 
 nav #nav-menu {
-    float: right;
+    display:grid;
+    grid-template-columns: 104px 282px 129px 191px 160px 167 px 90px;
 
 }
 
@@ -314,11 +316,9 @@ nav #nav-user li:first-child {
 }
 
 nav #nav-menu li {
-    margin-left: 100px;
 }
 
 nav #nav-menu li:first-child {
-    margin-left: 0;
 }
 
 nav .nav-menu-btn {
@@ -336,6 +336,29 @@ nav #user-join {
     width: 36px;
     background-position: -97px -1px;
 }
+nav #nav-menu li:nth-child(1){
+    grid-column: 2;
+}
+nav #nav-menu li:nth-child(2){
+    grid-column: 3;
+}
+
+nav #nav-menu li:nth-child(3){
+    grid-column: 4;
+}
+
+nav #nav-menu li:nth-child(4){
+    grid-column: 5;
+}
+
+nav #nav-menu li:nth-child(5){
+    grid-column: 6;
+}
+nav #nav-menu li:nth-child(6){
+    grid-column: 7;
+}
+
+
 
 nav #menu-btn1 {
     width: 165px;
