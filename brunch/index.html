@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script defer src="./js/top_banner.js"></script>
+    <script defer src="./js/main.js"></script>
 
     <!-- 폰트 나눔명조 -->
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
@@ -24,10 +25,10 @@
 <body>
     <header>
         <!-- 상단 배너 -->
-        <article >
+        <article>
             <a href="#">
                 <!-- 상단 배너 부분 -->
-                <div class="top-banner close">
+                <div class="top-banner ">
                     <div class="top-banner-full-text">
                     </div>
                     <div class="top-banner-text">
@@ -35,17 +36,39 @@
                 </div>
             </a>
         </article>
-        <!-- 상단 바 -->
-        <nav>
-            <!-- 상단바 > 좌측 사이드메뉴 버튼 + 로고 -->
-            <div>
 
+        <!-- 상단 바 -->
+        <nav id="top_nav">
+            <!-- 상단바 > 좌측 사이드메뉴 버튼 + 로고 -->
+            <div class="nav-left clearfix">
+                <button class="nav-menu-btn"></button>
+                <a href="">
+                    <div class="top-logo"></div>
+                </a>
             </div>
             <!-- 상단바 > 우측 시작하기 + 검색버튼-->
-            <div>
+            <div class="nav-right">
+                <button class="nav-join">시작하기</button>
+                <button class="nav-search"></button>
+            </div>
+        </nav>
+        <!--좌측 fixed 메뉴 -->
+        <nav id="side_nav">
+            <div class="side-nav">
+                <div class="side-nav-top">
+                    <div class="logo"></div>
+
+
+                </div>
+                <div class="side-nav-bottom">
+                    <div></div>
+                    <div></div>
+                </div>
 
             </div>
         </nav>
+
+
     </header>
 
 </body>
