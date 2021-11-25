@@ -1,0 +1,20 @@
+{
+  "name": "clone",
+  "version": "1.0.0",
+  "description": "clonecoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axl0926/clonecoding.git"
+  },
+  "author": "w9",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axl0926/clonecoding/issues"
+  },
+  "homepage": "https://github.com/axl0926/clonecoding#readme",
+  "dependencies": {}
+}

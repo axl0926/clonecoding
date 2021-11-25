@@ -1,0 +1,47 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body,html{
+    width:100%;
+    height:100%;
+}
+body{
+    height:8155px;
+}
+/* 상단 배너 */
+.top-banner{
+    margin-top:-420px;
+    width:100%;
+    height:480px;
+    background-image: url(../img/top_banner_full_bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.top-banner.close{
+    transition:all 1s;
+}
+.top-banner.open{
+    transition:all 0s;
+}
+.top-banner-full-text{
+    width:960px;
+    height:480px;
+    margin: auto;
+    background-image: url(../img/top_banner_full_text.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.top-banner-text{
+    width:960px;
+    height:60px;
+    margin: auto;
+    background-image: url(../img/top_banner_text.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    top:-60px;
+    transition:opacity 1s;
+}
