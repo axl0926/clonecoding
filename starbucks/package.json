@@ -1,0 +1,14 @@
+{
+  "name": "starbucks",
+  "version": "1.0.0",
+  "description": "starbucks clone coding",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "송웅규",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

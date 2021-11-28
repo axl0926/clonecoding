@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reset.css">
     <script defer src="./js/header.js"></script>
+    <script defer src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
 
     <!-- 나눔바른고딕폰트 -->
     <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css'
@@ -403,10 +409,88 @@
                 </nav>
             </div>
         </div>
+        <div class="fixed_banner">
+            <a href="#none">
+                <img src="./img/fixed_banner.png" alt="">
+            </a>
+        </div>
     </header>
+    <main>
+        <div class="main-banner">
+            <div class="main-wrap">
+                <a href="#none">자세히 보기</a>
+                <div class="main-content">
+                    <div class="main-img">
+                        <img src="./img/main_banner_1.png" alt=""></div>
+                    <div class="main-img">
+                        <img src="./img/main_banner_2.png" alt=""></div>
+                    <div class="main-img">
+                        <img src="./img/main_banner_3.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="line-banner">
+            <div class="line-notice">
+                <div class="notice-inner">
+                    <h3>공지사항</h3>
+                    <ul>
+                        <li class="line-notice-active"><a href="">사이렌 오더 주문 건수 제한 안내(11/2~12/31)</a></li>
+                        <li><a href="">2021 플래너 쿠폰 3종 유효 기간 연장 안내</a></li>
+                        <li><a href="">시스템 개선 및 점검 안내</a></li>
+                        <li><a href="">시스템 개선 및 점검 안내</a></li>
+                        <li><a href="">시스템 개선 및 점검 안내</a></li>
+                    </ul>
+                    <a href="#none"></a>
+                </div>
+            </div>
+            <div class="line-promotion">
+                <div class="promotion-inner">
+                    <h3>공지사항</h3>
+                    <a href="#none"></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="reward-banner">
+            <div class="reward-wrap">
+                <div class="reward-logo">
+
+                </div>
+                <div class="reward-inner">
+                    <div class="reward-inner-top">
+                        <div class="reward-text">
+                            <h3>스타벅스만의 특별한 혜택, <b>스타벅스 리워드</b></h3>
+                            <p><b>스타벅스 회원이세요?</b> 로그인을 통해 나만의 리워드를 확인해보세요.</p>
+                            <p><b>스타벅스 회원이 아니세요?</b> 가입을 통해 리워드 혜택을 즐기세요.</p>
+                        </div>
+                        <div class="reward-btn">
+                            <a href="" class="r-join-btn">회원가입</a>
+                            <a href="" class="r-login-btn">로그인</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="reward-inner-bottom">
+                        <div class="reward-text">
+                            <p>회원 가입 후, 스타벅스 e-Gift Card를 <b>"나에게 선물하기"로 구매하시고, 편리하게 등록하세요!</b></p>
+                            <p>카드를 등록하여 스타벅스 리워드 회원이 되신 후, 첫 구매를 하시면 무료 음료쿠폰을 드립니다!</p>
+                        </div>
+                        <div class="reward-btn">
+                            <a href="" class="r-gift-btn">e-Gift Card 선물하기</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
-
+    <!-- AOS -->
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
