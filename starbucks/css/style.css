@@ -1,3 +1,10 @@
+
+/* 
+@Filename:starbucks/css/style.css
+@Author: 송웅규
+@Description: starbucks 클론 코딩 공통요소 css파일
+*/
+
 *{
     outline: none;
 }
@@ -7,8 +14,8 @@ html {
     height: 100%;
 }
 body {
-    height: 8155px;
     padding-top:123px;
+    overflow-x: hidden;
 }
 ul,li,a{
     list-style: none;
@@ -16,9 +23,4 @@ ul,li,a{
     color:inherit;
 }
 
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-    float: none;
-}
+

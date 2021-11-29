@@ -1,3 +1,11 @@
+/**
+ * @filename    : starbucks/js/main.js
+ * @author      : 송웅규
+ * @description : <main>태그에서 요구하는 js 기능 모음
+ */
+
+
+
 const mainImgs = document.querySelectorAll('.main-img');
 const mainLink = document.querySelector('.main-wrap>a');
 // main 내부 최상단 배너 이미지 순차적로딩 애니메이션  

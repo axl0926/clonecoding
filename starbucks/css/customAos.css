@@ -1,0 +1,10 @@
+
+/* 
+@Filename:starbucks/css/customAos.css
+@Author: 송웅규
+@Description: starbucks 클론 코딩에서 사용한 외부 라이브러리 AoS의 커스텀 애니메이션 css파일
+*/
+
+
+[data-aos=fade-left-custom]{transform:translate3d(500px,0,0)}
+[data-aos=fade-right-custom]{transform:translate3d(-500px,0,0)}

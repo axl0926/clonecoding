@@ -1,0 +1,118 @@
+
+/* 
+@Filename:starbucks/css/footer.css
+@Author: 송웅규
+@Description: starbucks 클론 코딩 <footer>하위 요소 css파일
+*/
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: #2C2A29;
+    letter-spacing: -1px;
+}
+
+.footer-nav {
+    margin: auto;
+    width: 1182px;
+    height: 214px;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    padding-top: 35px;
+    background-image: url(../img/footer_logo.png);
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+}
+
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+
+.footer-nav ul li {
+    height: 24px;
+    line-height: 24px;
+    letter-spacing: -1.5px;
+}
+
+.footer-nav ul h3 {
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.footer-award {
+
+    margin-top: 40px;
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+}
+
+.award-inner {
+    width: 1182px;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.footer-nav-2 ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer-nav-2 ul li:first-child{
+    font-weight: bolder;
+    color:#00b650;
+}
+.footer-nav-2 ul li {
+    border-right: solid 1px #393939;
+    padding:0 10px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+address{
+    display: flex;
+    font-style: normal;
+    gap:20px;
+    flex-direction: column;
+    align-items: center;
+}
+address span{
+    color:#999;
+    font-size: 12.5px;
+}
+address .address{
+    display: flex;
+    gap:20px;
+}
+address a.adr-btn{
+    width:110px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    font-size:12px;
+    border:solid 2px white;
+    border-radius: 3px;
+    color:white;
+}
+address .btns{
+    display: flex;    
+    justify-content: center;
+    margin-top:15px;
+    gap:7px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
